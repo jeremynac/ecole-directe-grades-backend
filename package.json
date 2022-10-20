@@ -2,7 +2,7 @@
   "name": "app",
   "version": "0.0.0",
   "scripts": {
-    "start": "nodemon",
+    "start": "./node_modules/.bin/ts-node -r tsconfig-paths/register index.ts",
     "lint": "eslint **/*.ts",
     "lint:fix": "eslint **/*.ts --fix"
   },
