@@ -1,11 +1,6 @@
 // Start the server
-import cookieParser from 'cookie-parser'
-
 import express, { NextFunction, Request, Response } from 'express'
-import 'express-async-errors'
 import Session from 'ecoledirecte.js'
-
-require('dotenv').config()
 
 const app = express()
 
@@ -22,7 +17,6 @@ app.use((req, res, next) => {
 })
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
-app.use(cookieParser())
 
 const router = express.Router()
 
