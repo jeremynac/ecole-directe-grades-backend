@@ -11,16 +11,7 @@
       "index.ts"
     ],
     "ext": "ts, html",
-    "ignore": [
-      "src/public"
-    ],
-    "exec": "./node_modules/.bin/ts-node -r tsconfig-paths/register ./src"
-  },
-  "_moduleAliases": {
-    "@daos": "dist/daos",
-    "@entities": "dist/entities",
-    "@shared": "dist/shared",
-    "@server": "dist/Server"
+    "exec": "./node_modules/.bin/ts-node -r tsconfig-paths/register index.ts"
   },
   "eslintConfig": {
     "parser": "@typescript-eslint/parser",
@@ -53,7 +44,6 @@
     }
   },
   "eslintIgnore": [
-    "src/public/",
     "build.ts"
   ],
   "dependencies": {
