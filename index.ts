@@ -26,6 +26,10 @@ app.use(cookieParser())
 
 const router = express.Router()
 
+router.get('/', (_, res) => {
+  res.send('ecole-directe-grades-backend')
+})
+
 router.post('/login', async (req: Request, res: Response, next: NextFunction) => {
   const { username, password } = req.body
   const session = new Session(username, password)
