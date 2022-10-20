@@ -6,6 +6,7 @@
     "lint": "eslint **/*.ts",
     "lint:fix": "eslint **/*.ts --fix"
   },
+  "main": "index.js",
   "nodemonConfig": {
     "watch": [
       "index.ts"
