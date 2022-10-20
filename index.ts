@@ -62,7 +62,7 @@ app.use('', router)
 // Export express instance
 export default app
 
-const port = Number(3001)
+const port = Number(443)
 app.listen(port, () => {
   console.info('Express server started on port: ' + port)
 })
